@@ -84,6 +84,7 @@
                 "maxEOF": 1
             }
         ],
+        "no-undef": 0,
         "no-multi-spaces": 1,
         "keyword-spacing": 1,
         "react/prop-types": 0
