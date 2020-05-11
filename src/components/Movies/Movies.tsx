@@ -1,24 +1,16 @@
 import * as React from 'react';
-import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import { RootState } from '../../redux/root-reducer';
-import { fetchMovies } from '../../redux/movies/movies.actions';
 import Loader from '../Loader/Loader';
 
 import './Movies.scss';
+import MoviesSearch from '../MoviesSearch/MoviesSearch';
 
 export interface MoviesProps {}
 
 const Movies: React.FC<MoviesProps> = () => {
-    const {movies, searchQuery, pages, moviesFetchLoading, moviesFetchError} = useSelector((state: RootState) => state.movies);
-    const dispatch = useDispatch(); //this hook gives us dispatch method
-
-    useEffect(() => {
-        dispatch(fetchMovies('Fast'));
-    }, []);
-
-    console.log('movies', movies, searchQuery, pages);
+    const { movies, moviesFetchLoading, moviesFetchError } = useSelector((state: RootState) => state.movies);
 
     if (moviesFetchError) {
         return <div>
@@ -31,7 +23,16 @@ const Movies: React.FC<MoviesProps> = () => {
     }
 
     return <>
-       Movies
+        <div className="main">
+            <div className="container">
+                <MoviesSearch></MoviesSearch>
+                {movies.length > 0 ? (
+                    <pre>{JSON.stringify(movies, null, 2)}</pre>
+                ) : (
+                    <p>No Movies</p>
+                )}
+            </div>
+        </div>
     </>;
 };
 

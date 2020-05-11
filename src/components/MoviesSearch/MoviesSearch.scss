@@ -1,0 +1,72 @@
+input {
+
+    &.input__field {
+        background-clip: padding-box;
+        background-color: var(--color-white);
+        border: 1px solid var(--color-gray);
+        border-radius: 0;
+        color: var(--color-base);
+        display: block;
+        font-size: 1rem;
+        line-height: 1.47;
+        padding: 15px 20px;
+        width: 100%;
+    }
+
+    &:focus {
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 0.2rem var(--color-primary);
+        outline: 0;
+    }
+
+    &::-ms-expand {
+        background-color: transparent;
+        border: 0;
+    }
+
+    &::placeholder {
+        color: var(--color-gray-light);
+    }
+
+    &:disabled,
+    &[readonly] {
+        background-color: var(--color-gray);
+    }
+}
+
+.btn {
+    background: var(--color-primary);
+    border: 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 6px var(--color-base);
+    color: var(--color-base);
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 0 0 1rem;
+    outline: none;
+    padding: 15px 80px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+        background: var(--color-base);
+        box-shadow: 0 6px var(--color-primary);
+        color: var(--color-white);
+    }
+}
+
+.search {
+    &__button {
+        flex: 1 1 auto;
+    }
+
+    &__input {
+        flex: 1 1 auto;
+    }
+}

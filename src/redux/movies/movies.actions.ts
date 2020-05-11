@@ -5,6 +5,8 @@ import { MOVIES_FETCH, MOVIES_FETCH_LOADING, MOVIES_FETCH_ERROR, MoviesActionTyp
 export const fetchMovies = (searchQuery: string) => {
 
     return async (dispatch: Dispatch): Promise<void> => {
+        dispatch(setMoviesFetchLoadingAction(true));
+
         try {
             const response = await fetch(`${process.env.REACT_APP_API_URL}/search/movie?api_key=${process.env.REACT_APP_API_TOKEN}&query=${searchQuery}`);
             const {results, total_pages} = await response.json();
