@@ -3,15 +3,50 @@
 exports[`App snapshot App 1`] = `
 <DocumentFragment>
   <div
-    class="loader__container"
+    class="main"
   >
     <div
-      class="loader"
+      class="container"
     >
-      <div />
-      <div />
-      <div />
-      <div />
+      <h1
+        class="search__title"
+      >
+        Search for: 
+      </h1>
+      <form
+        class="search__form"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="search__input input"
+          >
+            <input
+              aria-label="Suchbegriff eingeben (zB: Bloodsport)"
+              class="search__input input__field"
+              id="search"
+              name="search"
+              placeholder="Suchbegriff eingeben (zB: Bloodsport)"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="search__button"
+          >
+            <button
+              class="btn"
+              type="button"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </form>
+      <p>
+        No Movies
+      </p>
     </div>
   </div>
 </DocumentFragment>

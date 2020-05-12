@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import Loader from '../Loader';
+import NotFound from '../NotFound';
 
 afterEach(cleanup);
 
-describe('Loader', () => {
+describe('NotFound', () => {
     it('renders without crashing', () => {
-        const { asFragment } = render(<Loader />);
+        const { asFragment } = render(<NotFound />);
         expect(asFragment()).toMatchSnapshot();
     });
 });
