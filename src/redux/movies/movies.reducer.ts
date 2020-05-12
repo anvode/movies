@@ -19,7 +19,8 @@ export const moviesReducer = (state: MoviesState = initialState, action: MoviesA
                 ...state,
                 movies: action.payload.movies,
                 searchQuery: action.payload.searchQuery,
-                pages: action.payload.pages
+                pages: action.payload.pages,
+                currentPage: action.payload.currentPage
             };
         }
 

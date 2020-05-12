@@ -9,7 +9,8 @@ export interface SetMoviesAction {
     payload: {
         movies: Movie[];
         searchQuery: string,
-        pages: number
+        pages: number,
+        currentPage: number
     };
 }
 
