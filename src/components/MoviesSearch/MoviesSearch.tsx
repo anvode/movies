@@ -19,7 +19,8 @@ const MoviesSearch: React.FC<MoviesSearchProps> = () => {
     };
 
     const submitHandler = (event: React.FormEvent<HTMLFormElement> | React.MouseEvent<HTMLButtonElement, MouseEvent>): void => {
-        !!state.length && dispatch(fetchMovies(state));
+        event.preventDefault();
+        !!state.length && dispatch(fetchMovies(state, 1));
     };
 
     return <>

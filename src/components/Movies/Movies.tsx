@@ -6,11 +6,11 @@ import Loader from '../Loader/Loader';
 
 import './Movies.scss';
 import MoviesSearch from '../MoviesSearch/MoviesSearch';
-
+import MoviesList from './MoviesList';
 export interface MoviesProps {}
 
 const Movies: React.FC<MoviesProps> = () => {
-    const { movies, moviesFetchLoading, moviesFetchError } = useSelector((state: RootState) => state.movies);
+    const { moviesFetchLoading, moviesFetchError } = useSelector((state: RootState) => state.movies);
 
     if (moviesFetchError) {
         return <div>
@@ -26,11 +26,7 @@ const Movies: React.FC<MoviesProps> = () => {
         <div className="main">
             <div className="container">
                 <MoviesSearch></MoviesSearch>
-                {movies.length > 0 ? (
-                    <pre>{JSON.stringify(movies, null, 2)}</pre>
-                ) : (
-                    <p>No Movies</p>
-                )}
+                <MoviesList></MoviesList>
             </div>
         </div>
     </>;

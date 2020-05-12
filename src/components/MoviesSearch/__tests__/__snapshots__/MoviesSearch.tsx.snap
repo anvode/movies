@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoviesSearch renders without crashing 1`] = `
+<DocumentFragment>
+  <h1
+    class="search__title"
+  >
+    Search for: 
+  </h1>
+  <form
+    class="search__form"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="search__input input"
+      >
+        <input
+          aria-label="Suchbegriff eingeben (zB: Bloodsport)"
+          class="search__input input__field"
+          id="search"
+          name="search"
+          placeholder="Suchbegriff eingeben (zB: Bloodsport)"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="search__button"
+      >
+        <button
+          class="btn"
+          type="button"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </form>
+</DocumentFragment>
+`;
