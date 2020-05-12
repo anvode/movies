@@ -7,10 +7,11 @@ import Loader from '../Loader/Loader';
 import './Movies.scss';
 import MoviesSearch from '../MoviesSearch/MoviesSearch';
 import MoviesList from './MoviesList';
+import Pagination from '../Pagination';
 export interface MoviesProps {}
 
 const Movies: React.FC<MoviesProps> = () => {
-    const { moviesFetchLoading, moviesFetchError } = useSelector((state: RootState) => state.movies);
+    const { moviesFetchLoading, moviesFetchError, pages } = useSelector((state: RootState) => state.movies);
 
     if (moviesFetchError) {
         return <div>
@@ -27,6 +28,7 @@ const Movies: React.FC<MoviesProps> = () => {
             <div className="container">
                 <MoviesSearch></MoviesSearch>
                 <MoviesList></MoviesList>
+                {pages > 1 && <Pagination></Pagination>}
             </div>
         </div>
     </>;

@@ -1,0 +1,14 @@
+.pagination {
+    &__btn {
+        box-shadow: none;
+        margin: 0 0.2rem 0 0;
+        padding: 0.5rem;
+        text-decoration: none;
+
+        &.is--current {
+            background: var(--color-base);
+            color: var(--color-white);
+            cursor: default;
+        }
+    }
+}

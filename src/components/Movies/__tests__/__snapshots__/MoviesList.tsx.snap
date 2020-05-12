@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MoviesList renders without crashingt 1`] = `
+exports[`MoviesList renders without crashing 1`] = `
 <DocumentFragment>
   <p>
     No Movies
