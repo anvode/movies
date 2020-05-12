@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieDetail renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="main"
+  >
+    <div
+      class="container"
+    >
+      <h1
+        class="movie-detail__title"
+      >
+        No Movie Selected
+      </h1>
+    </div>
+  </div>
+</DocumentFragment>
+`;
