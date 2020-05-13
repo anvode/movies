@@ -40,7 +40,7 @@ const MoviesSearch: React.FC<MoviesSearchProps> = () => {
                     </input>
                 </div>
                 <div className="search__button">
-                    <button onClick={submitHandler} type="button" className="btn">Search</button>
+                    <button onClick={submitHandler} type="submit" className="btn">Search</button>
                 </div>
             </div>
         </form>
