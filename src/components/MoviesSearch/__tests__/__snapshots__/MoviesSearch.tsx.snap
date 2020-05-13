@@ -31,7 +31,7 @@ exports[`MoviesSearch renders without crashing 1`] = `
       >
         <button
           class="btn"
-          type="button"
+          type="submit"
         >
           Search
         </button>

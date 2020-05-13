@@ -37,7 +37,7 @@ exports[`App snapshot App 1`] = `
           >
             <button
               class="btn"
-              type="button"
+              type="submit"
             >
               Search
             </button>

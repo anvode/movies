@@ -1,5 +1,5 @@
-import { MoviesState } from '../types/Movies';
-import { MOVIES_FETCH, MOVIES_FETCH_LOADING, MOVIES_FETCH_ERROR, MoviesActionTypes } from '../types/actions';
+import { MoviesState } from './types/Movies';
+import { MOVIES_FETCH, MOVIES_FETCH_LOADING, MOVIES_FETCH_ERROR, MoviesActionTypes } from './types/actions';
 
 const initialState: MoviesState = {
     moviesFetchLoading: false,

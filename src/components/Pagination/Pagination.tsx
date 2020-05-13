@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { RootState } from '../../redux/root-reducer';
-import { fetchMovies } from '../../redux/movies/movies.actions';
+import { fetchMovies } from '../../redux/movies/movies.utils';
 
 import './Pagination.scss';
 

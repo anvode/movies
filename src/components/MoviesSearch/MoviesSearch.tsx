@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { RootState } from '../../redux/root-reducer';
-import { fetchMovies } from '../../redux/movies/movies.actions';
+import { fetchMovies } from '../../redux/movies/movies.utils';
 
 import './MoviesSearch.scss';
 
