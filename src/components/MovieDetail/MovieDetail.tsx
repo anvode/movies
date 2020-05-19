@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useSelector } from 'react-redux';
-import {withRouter, RouteComponentProps} from 'react-router-dom';
+import { RouteComponentProps } from 'react-router-dom';
 
 import { RootState } from '../../redux/root-reducer';
 
@@ -41,4 +41,4 @@ const MovieDetail: React.FC<RouteComponentProps & MovieDetailProps> = (props) =>
     </div>;
 };
 
-export default withRouter(MovieDetail);
+export default MovieDetail;
